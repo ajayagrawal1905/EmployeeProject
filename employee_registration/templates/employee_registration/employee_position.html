@@ -1,0 +1,15 @@
+{% extends "employee_registration/base.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<form action="" method="POST" autocomplete="off">
+    {% csrf_token %}
+    {{form.title|as_crispy_field}}
+</form>
+
+
+
+
+{% endblock content %}
